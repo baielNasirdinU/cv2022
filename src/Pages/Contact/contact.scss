@@ -1,0 +1,23 @@
+.contact {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 65vh;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    margin-top: 45px;
+  }
+}
+textarea,
+input {
+  display: block;
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+}

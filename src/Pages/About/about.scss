@@ -1,0 +1,71 @@
+.about {
+  text-align: center;
+
+  &__intro {
+    margin-bottom: 45px;
+    padding-top: 45px;
+    h1,
+    p {
+      margin: 0;
+    }
+  }
+  &__skills {
+    margin-bottom: 45px;
+    // border: 1px solid red;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    li {
+      background-color: black;
+      color: white;
+      padding: 10px 35px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border-radius: 6px;
+      svg {
+        font-size: 1.5em;
+      }
+    }
+  }
+  &__partfolio {
+    margin-bottom: 45px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    li {
+      position: relative;
+      width: 30%;
+      height: 350px;
+      overflow: hidden;
+      box-shadow: 2px 8px 12px black;
+
+      h4 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-60%);
+        background-color: transparentize($color: black, $amount: 0.2);
+        padding: 20px 10px;
+        color: wheat;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      &:hover h4 {
+        opacity: 1;
+      }
+    }
+  }
+}
